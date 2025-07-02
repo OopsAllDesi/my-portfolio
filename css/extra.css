@@ -1,0 +1,210 @@
+    /* Base Styles */
+    body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+    color: #2c3e2f;
+    }
+
+    /* Header */
+    header {
+    background-color: #111;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    }
+
+    header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    }
+
+    header p {
+    margin-top: 8px;
+    font-size: 1.2em;
+    }
+
+    /* Menu Buttons */
+    .menu-buttons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 1rem;
+    }
+
+    .menu-buttons a {
+    background-color: white;
+    color: #2f4231;
+    text-decoration: none;
+    padding: 0.4rem 0.9rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.75rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .menu-buttons a:hover {
+    background-color: #ffffffcc;
+    color: #000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Collage Section Layout */
+    .collage-block {
+    width: 100%;
+    padding: 3rem 0;
+    }
+
+    .collage-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 40px;
+    }
+
+    .collage-title {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    }
+
+    /* Photo Collage Layout */
+    .photo-collage {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: left;
+    }
+
+    /* Default Photo Grid */
+    .photo-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-left: -160px;
+    margin-right: 50px;
+    }
+
+    .photo-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    }
+
+    .photo-row img {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .photo-caption {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 2px;
+    font-style: italic;
+    }
+
+
+
+    /* Text Section */
+    .collage-text {
+    flex: 0 0 50%;
+    padding: 0 1.5rem;
+    text-align: left;
+    }
+
+    .collage-text h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    }
+
+    .collage-text h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    margin-top: 1rem;
+    }
+
+    .collage-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    }
+
+    .project-meta p {
+    font-size: 0.95rem;
+    }
+
+    .video-row {
+  width: 690px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.video-row video {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+    /* Background Colors */
+    .green-bg {
+    background-color: #2f4231;
+    color: white;
+    }
+
+    .beige-bg {
+    background-color: #f3efe1;
+    color: #2c3e2f;
+    }
+
+
+
+    /* Footer */
+    .main-footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+    .collage-wrapper {
+        flex-direction: column;
+    }
+
+    .photo-collage,
+    .collage-text {
+        flex: 1 1 100%;
+        padding: 0;
+    }
+
+    .photo-grid,
+    .nature-grid,
+    .brochure-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .collage-text {
+        text-align: center;
+        padding: 1rem 1.5rem;
+    }
+    }

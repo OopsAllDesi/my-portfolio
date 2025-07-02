@@ -1,0 +1,140 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #2c3e2f;
+}
+
+.main-header {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.main-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.main-header p {
+  font-size: 1.1rem;
+  opacity: 0.85;
+}
+.menu-buttons {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-buttons a {
+  background-color: white;
+  color: #2f4231;
+  text-decoration: none;
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-buttons a:hover {
+  background-color: #ffffffcc;
+  color: #000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.video-block {
+  width: 100%;
+  padding: 2rem 0rem 2rem; /* top padding to match the title spacing */
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.video-title {
+  text-align: center;
+}
+
+.video-title h3 {
+  font-size: 1.75rem;
+  margin-top: 0rem; /* adjust to match the padding of video-block */
+  margin-bottom: 3rem;  /* keep the same bottom spacing */
+}
+
+
+.video-layout {
+  display: flex;
+  flex-wrap: nowrap; /* prevent wrapping */
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+
+.video-left {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  margin-left: -3rem;
+}
+
+.video-frame {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.video-text {
+  flex: 0 0 50%;
+  padding: 0 2rem;
+  text-align: left;
+}
+
+.video-text p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  display: block;
+  margin-bottom: 5rem;
+}
+
+/* Background colors */
+.green-bg {
+  background-color: #2f4231;
+  color: white;
+}
+
+.beige-bg {
+  background-color: #f3efe1;
+  color: #2c3e2f;
+}
+
+.main-footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .video-layout {
+    flex-direction: column;
+  }
+
+  .video-left,
+  .video-text {
+    flex: 1 1 100%;
+  }
+}
