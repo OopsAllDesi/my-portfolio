@@ -1,0 +1,141 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  color: #2c3e2f;
+}
+
+/* Header */
+header {
+  background-color: #111;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-top: 1em;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-buttons {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-buttons a {
+  background-color: white;
+  color: #2f4231;
+  text-decoration: none;
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-buttons a:hover {
+  background-color: #ffffffcc;
+  color: #000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Titles and Descriptions */
+.doc-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  margin-top: -1rem;
+}
+
+.doc-description {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto 2.5rem auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Document Grid */
+.doc-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.doc-block {
+  width: 400px;
+  text-align: center;
+}
+
+.doc-block h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.doc-block iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Backgrounds */
+.beige-bg {
+  background-color: #f3efe1;
+  color: #2c3e2f;
+  padding: 4rem 0;
+}
+
+.green-bg {
+  background-color: #2f4231;
+  color: white;
+  padding: 4rem 0;
+}
+
+/* Footer */
+.main-footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .doc-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .doc-block {
+    width: 90%;
+  }
+
+  .doc-block iframe {
+    height: 250px;
+  }
+
+  .menu-buttons {
+    flex-direction: column;
+    top: 10px;
+    left: 10px;
+  }
+}
